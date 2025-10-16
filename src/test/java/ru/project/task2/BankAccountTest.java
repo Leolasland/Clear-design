@@ -30,6 +30,17 @@ class BankAccountTest {
     }
 
     @Test
+    void deposit_max() {
+        BankAccount bankAccount = new BankAccount(500);
+        bankAccount.deposit(Double.MAX_VALUE);
+        double balance = bankAccount.getBalance();
+
+        bankAccount.deposit(balance * 2);
+
+        assertEquals(Double.POSITIVE_INFINITY, bankAccount.getBalance());
+    }
+
+    @Test
     void deposit_negative() {
         BankAccount bankAccount = new BankAccount(500);
 
@@ -45,6 +56,17 @@ class BankAccountTest {
         bankAccount.withdraw(100);
 
         assertEquals(400, bankAccount.getBalance());
+    }
+
+    @Test
+    void withdraw_max() {
+        BankAccount bankAccount = new BankAccount(500);
+        bankAccount.withdraw(Double.MAX_VALUE);
+        double balance = bankAccount.getBalance();
+
+        bankAccount.withdraw(balance * 2);
+
+        assertEquals(Double.POSITIVE_INFINITY, bankAccount.getBalance());
     }
 
     @Test
