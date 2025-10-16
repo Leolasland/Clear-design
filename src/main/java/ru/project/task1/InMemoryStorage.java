@@ -1,4 +1,4 @@
-package ru.project;
+package ru.project.task1;
 import java.util.HashMap;
 import java.util.Map;
 

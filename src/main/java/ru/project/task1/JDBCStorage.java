@@ -1,4 +1,4 @@
-package ru.project;
+package ru.project.task1;
 import java.sql.*;
 
 public class JDBCStorage implements Storage {
@@ -47,6 +47,7 @@ public class JDBCStorage implements Storage {
 
         } catch (SQLException e) {
             e.printStackTrace();
+            return null;
         }
     }
 }
