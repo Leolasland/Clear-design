@@ -1,6 +1,7 @@
-package ru.project.task2.task3;
+package ru.project.task3;
 
 import org.junit.jupiter.api.Test;
+import ru.project.task3.AverageCalculator;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;

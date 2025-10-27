@@ -1,4 +1,4 @@
-package ru.project.task2.task3;
+package ru.project.task3;
 
 public class AverageCalculator {
 
